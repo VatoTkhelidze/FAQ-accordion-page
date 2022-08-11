@@ -61,7 +61,7 @@ h1{
     height: 1px;
     width: 279px;
     background: #E8E8EA;
-    margin-top: 18px;
+    margin-top: 10px;
 }
 
 
@@ -88,7 +88,6 @@ h1{
 }
 
 .arrow_active{
-    display: none;
     margin-top: 22.8px;
     transform: rotate(180deg);
 }
@@ -116,6 +115,10 @@ h1{
     justify-content: center;
 }
 
+.span{
+    display: block;
+}
+
 .answers{
     font-family: 'Kumbh Sans';
     font-style: normal;
@@ -129,7 +132,19 @@ h1{
 
 
 .answers{
-    display: none;
+    height: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.questionActive{
+    font-weight: 700;
+}
+
+
+.answerActive{
+    height: 50px;
+    opacity: 1;
 }
 
 
@@ -213,6 +228,13 @@ h1{
 
     .answers{
         width: 340px;
-        display: none;
+        height: 0px;
+        opacity: 0;
     }
+
+    .answerActive{
+        height: 50px;
+        opacity: 1;
+    }
+    
 }
